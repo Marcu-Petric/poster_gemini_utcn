@@ -25,6 +25,23 @@ The UTCN theme files live in `colorthemes/`:
 - `beamercolorthemeutcn.sty`
 - `beamercolorthemeutcnlight.sty`
 
+## Overleaf (download, no git clone)
+
+Each [GitHub Release](https://github.com/Marcu-Petric/poster_gemini_utcn/releases) includes **overleaf-template.zip**: a small bundle you can upload straight to Overleaf.
+
+1. Download `overleaf-template.zip` from the latest release.
+2. Overleaf: **New Project** → **Upload Project**.
+3. **Menu** → **Compiler** → **LuaLaTeX**, then **Recompile**.
+
+Details are inside the ZIP as `README.md`. To rebuild the ZIP locally, run `bash scripts/package-overleaf.sh` or `pwsh scripts/package-overleaf.ps1`.
+
+Releases are created when you push a version tag, for example:
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
 ## Usage
 
 Edit `poster.tex` and choose a color theme:
